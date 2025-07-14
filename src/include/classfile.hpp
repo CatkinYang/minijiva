@@ -12,11 +12,11 @@ class classfile {
   public:
     // 构造函数
   private:
-    uint32_t magicNumber_;  // 4字节 魔数
-    uint16_t subVersion_;   // 2字节 次版本号
-    uint16_t majorVersion_; // 2字节 主版本号
-    uint16_t constPoolNum_; // 2字节 常量池大小
-    ; // 常量池，需要依据常量池大小进行初始化？
+    uint32_t magicNumber_;   // 4字节 魔数
+    uint16_t subVersion_;    // 2字节 次版本号
+    uint16_t majorVersion_;  // 2字节 主版本号
+    uint16_t constPoolNum_;  // 2字节 常量池大小
+    ;                        // 常量池，需要依据常量池大小进行初始化？
     uint16_t accessFlags_;   // 2字节 访问标识
     uint16_t classRef_;      // 2字节，类索引
     uint16_t superClassRef_; // 2字节 父类索引
