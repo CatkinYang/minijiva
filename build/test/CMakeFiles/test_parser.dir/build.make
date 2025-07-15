@@ -97,6 +97,7 @@ test/test_parser: test/CMakeFiles/test_parser.dir/test_parser.cpp.o
 test/test_parser: test/CMakeFiles/test_parser.dir/build.make
 test/test_parser: lib/libminijava.a
 test/test_parser: lib/libgtest.a
+test/test_parser: lib/libattribute.a
 test/test_parser: test/CMakeFiles/test_parser.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_parser"
 	cd /Users/catkin/workspace/hygon/minijiva/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_parser.dir/link.txt --verbose=$(VERBOSE)

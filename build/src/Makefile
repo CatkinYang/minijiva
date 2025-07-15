@@ -209,6 +209,78 @@ accessflag/classAccFlg.cpp.s:
 	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/accessflag/classAccFlg.cpp.s
 .PHONY : accessflag/classAccFlg.cpp.s
 
+accessflag/fieldAccFlg.o: accessflag/fieldAccFlg.cpp.o
+.PHONY : accessflag/fieldAccFlg.o
+
+# target to build an object file
+accessflag/fieldAccFlg.cpp.o:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/accessflag/fieldAccFlg.cpp.o
+.PHONY : accessflag/fieldAccFlg.cpp.o
+
+accessflag/fieldAccFlg.i: accessflag/fieldAccFlg.cpp.i
+.PHONY : accessflag/fieldAccFlg.i
+
+# target to preprocess a source file
+accessflag/fieldAccFlg.cpp.i:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/accessflag/fieldAccFlg.cpp.i
+.PHONY : accessflag/fieldAccFlg.cpp.i
+
+accessflag/fieldAccFlg.s: accessflag/fieldAccFlg.cpp.s
+.PHONY : accessflag/fieldAccFlg.s
+
+# target to generate assembly for a file
+accessflag/fieldAccFlg.cpp.s:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/accessflag/fieldAccFlg.cpp.s
+.PHONY : accessflag/fieldAccFlg.cpp.s
+
+accessflag/methodAccFlg.o: accessflag/methodAccFlg.cpp.o
+.PHONY : accessflag/methodAccFlg.o
+
+# target to build an object file
+accessflag/methodAccFlg.cpp.o:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/accessflag/methodAccFlg.cpp.o
+.PHONY : accessflag/methodAccFlg.cpp.o
+
+accessflag/methodAccFlg.i: accessflag/methodAccFlg.cpp.i
+.PHONY : accessflag/methodAccFlg.i
+
+# target to preprocess a source file
+accessflag/methodAccFlg.cpp.i:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/accessflag/methodAccFlg.cpp.i
+.PHONY : accessflag/methodAccFlg.cpp.i
+
+accessflag/methodAccFlg.s: accessflag/methodAccFlg.cpp.s
+.PHONY : accessflag/methodAccFlg.s
+
+# target to generate assembly for a file
+accessflag/methodAccFlg.cpp.s:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/accessflag/methodAccFlg.cpp.s
+.PHONY : accessflag/methodAccFlg.cpp.s
+
+attribute/attribute_utils.o: attribute/attribute_utils.cpp.o
+.PHONY : attribute/attribute_utils.o
+
+# target to build an object file
+attribute/attribute_utils.cpp.o:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/attribute/attribute_utils.cpp.o
+.PHONY : attribute/attribute_utils.cpp.o
+
+attribute/attribute_utils.i: attribute/attribute_utils.cpp.i
+.PHONY : attribute/attribute_utils.i
+
+# target to preprocess a source file
+attribute/attribute_utils.cpp.i:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/attribute/attribute_utils.cpp.i
+.PHONY : attribute/attribute_utils.cpp.i
+
+attribute/attribute_utils.s: attribute/attribute_utils.cpp.s
+.PHONY : attribute/attribute_utils.s
+
+# target to generate assembly for a file
+attribute/attribute_utils.cpp.s:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/attribute/attribute_utils.cpp.s
+.PHONY : attribute/attribute_utils.cpp.s
+
 classfile.o: classfile.cpp.o
 .PHONY : classfile.o
 
@@ -322,6 +394,15 @@ help:
 	@echo "... accessflag/classAccFlg.o"
 	@echo "... accessflag/classAccFlg.i"
 	@echo "... accessflag/classAccFlg.s"
+	@echo "... accessflag/fieldAccFlg.o"
+	@echo "... accessflag/fieldAccFlg.i"
+	@echo "... accessflag/fieldAccFlg.s"
+	@echo "... accessflag/methodAccFlg.o"
+	@echo "... accessflag/methodAccFlg.i"
+	@echo "... accessflag/methodAccFlg.s"
+	@echo "... attribute/attribute_utils.o"
+	@echo "... attribute/attribute_utils.i"
+	@echo "... attribute/attribute_utils.s"
 	@echo "... classfile.o"
 	@echo "... classfile.i"
 	@echo "... classfile.s"

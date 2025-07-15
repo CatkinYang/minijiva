@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.31.3/CMakeSystem.cmake"
   "/Users/catkin/workspace/hygon/minijiva/src/CMakeLists.txt"
   "/Users/catkin/workspace/hygon/minijiva/src/accessflag/CMakeLists.txt"
+  "/Users/catkin/workspace/hygon/minijiva/src/attribute/CMakeLists.txt"
   "/Users/catkin/workspace/hygon/minijiva/src/constant/CMakeLists.txt"
   "/Users/catkin/workspace/hygon/minijiva/test/CMakeLists.txt"
   "/Users/catkin/workspace/hygon/minijiva/third_party/CMakeLists.txt"
@@ -94,6 +95,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/accessflag/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/constant/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/attribute/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -106,6 +108,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/minijava.dir/DependInfo.cmake"
   "src/accessflag/CMakeFiles/accessflag.dir/DependInfo.cmake"
   "src/constant/CMakeFiles/constant.dir/DependInfo.cmake"
+  "src/attribute/CMakeFiles/attribute.dir/DependInfo.cmake"
   "test/CMakeFiles/build-tests.dir/DependInfo.cmake"
   "test/CMakeFiles/test_classreader.dir/DependInfo.cmake"
   "test/CMakeFiles/test_parser.dir/DependInfo.cmake"

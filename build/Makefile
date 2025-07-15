@@ -263,6 +263,19 @@ constant/fast:
 .PHONY : constant/fast
 
 #=============================================================================
+# Target rules for targets named attribute
+
+# Build rule for target.
+attribute: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 attribute
+.PHONY : attribute
+
+# fast build rule for target.
+attribute/fast:
+	$(MAKE) $(MAKESILENT) -f src/attribute/CMakeFiles/attribute.dir/build.make src/attribute/CMakeFiles/attribute.dir/build
+.PHONY : attribute/fast
+
+#=============================================================================
 # Target rules for targets named build-tests
 
 # Build rule for target.
@@ -316,6 +329,7 @@ help:
 	@echo "... test"
 	@echo "... build-tests"
 	@echo "... accessflag"
+	@echo "... attribute"
 	@echo "... constant"
 	@echo "... gmock"
 	@echo "... gmock_main"

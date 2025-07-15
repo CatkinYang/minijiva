@@ -40,14 +40,13 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
     // 初始化常量池大小
     cf->constant_pool_.resize(cf->constant_pool_count_ - 1); // 从索引1开始
     // 读取常量池数据
-
     for (auto i = 1; i < cf->constant_pool_count_; ++i) {
         auto tag = reader.readU1();
         // 调用 cp_info 子类的工厂方法创建对应的常量数据
         auto entry = cp_info::read(tag, reader);
         cf->constant_pool_[i - 1] = std::move(entry);
-        // Long / Double 占两个槽位
-        if (tag == CONSTANT_Long || tag == CONSTANT_Double) {
+        if (tag == CONSTANT_Long ||
+            tag == CONSTANT_Double) { // Long / Double 占两个槽位
             ++i;
             if (i < cf->constant_pool_count_)
                 cf->constant_pool_[i - 1] = nullptr; // 占位，不能使用
@@ -57,7 +56,6 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
 
     // 访问标志
     cf->access_flags_ = reader.readU2();
-
     std::cout << "Access Flags: 0x" << std::hex << cf->access_flags_ << " ("
               << classAccFlg::toString(cf->access_flags_) << ")" << std::dec
               << "\n";
@@ -70,7 +68,6 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
         std::string superName = (cf->super_class_ != 0)
                                     ? cf->getClassName(cf->super_class_)
                                     : "(none)";
-
         std::cout << "This class: " << thisName << "\n";
         std::cout << "Super class: " << superName << "\n";
     } catch (const std::exception &ex) {
@@ -84,7 +81,7 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
         cf->interfaces_[i] = reader.readU2();
     }
     std::cout << "Interfaces count: " << cf->interfaces_count_ << "\n";
-    for (u2 i = 0; i < cf->interfaces_count_; ++i) {
+    for (auto i = 0; i < cf->interfaces_count_; ++i) {
         try {
             std::string ifaceName = cf->getClassName(cf->interfaces_[i]);
             std::cout << "  Interface #" << i << ": " << ifaceName << "\n";
@@ -98,14 +95,14 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
     cf->fields_count_ = reader.readU2();
     cf->fields_.resize(cf->fields_count_);
     std::cout << "Fields count: " << cf->fields_count_ << "\n";
-    for (u2 i = 0; i < cf->fields_count_; ++i) {
+    for (auto i = 0; i < cf->fields_count_; ++i) {
         auto field = std::make_unique<field_info>();
         field->access_flags_ = reader.readU2();
         field->name_index_ = reader.readU2();
         field->descriptor_index = reader.readU2();
         field->attributes_count_ = reader.readU2();
-        field->attributes_ = readAttributes(reader, field->attributes_count_);
-
+        field->attributes_ =
+            readAttributes(reader, field->attributes_count_, *cf.get());
         try {
             std::string fieldName = cf->getUtf8(field->name_index_);
             std::string descriptor = cf->getUtf8(field->descriptor_index);
@@ -128,7 +125,8 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
         method->name_index_ = reader.readU2();
         method->descriptor_index_ = reader.readU2();
         method->attributes_count_ = reader.readU2();
-        method->attributes_ = readAttributes(reader, method->attributes_count_);
+        method->attributes_ =
+            readAttributes(reader, method->attributes_count_, *cf);
 
         try {
             std::string methodName = cf->getUtf8(method->name_index_);
@@ -143,8 +141,9 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
         cf->methods_[i] = std::move(method);
     }
 
+    // 属性表
     cf->attributes_count_ = reader.readU2();
-    cf->attributes_ = readAttributes(reader, cf->attributes_count_);
+    cf->attributes_ = readAttributes(reader, cf->attributes_count_, *cf.get());
     for (u2 i = 0; i < cf->attributes_count_; ++i) {
         const auto &attr = cf->attributes_[i];
         try {
@@ -155,6 +154,10 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
             std::cerr << "  Attribute #" << i << " parse failed: " << e.what()
                       << "\n";
         }
+    }
+    for (u2 i = 0; i < cf->attributes_count_; ++i) {
+        const auto &attr = cf->attributes_[i];
+        attr->print(std::cout, *cf.get());
     }
 
     return cf;

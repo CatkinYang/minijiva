@@ -97,6 +97,7 @@ test/test_classreader: test/CMakeFiles/test_classreader.dir/test_classreader.cpp
 test/test_classreader: test/CMakeFiles/test_classreader.dir/build.make
 test/test_classreader: lib/libminijava.a
 test/test_classreader: lib/libgtest.a
+test/test_classreader: lib/libattribute.a
 test/test_classreader: test/CMakeFiles/test_classreader.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_classreader"
 	cd /Users/catkin/workspace/hygon/minijiva/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_classreader.dir/link.txt --verbose=$(VERBOSE)

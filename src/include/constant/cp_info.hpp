@@ -1,15 +1,12 @@
 #pragma once
 
 #include "classReader.hpp"
+#include "marco.hpp"
 #include <iostream>
 #include <memory>
 #include <string>
 
 namespace mini {
-
-using u1 = uint8_t;
-using u2 = uint16_t;
-using u4 = uint32_t;
 
 enum ConstantTag : u1 {
     CONSTANT_Utf8 = 1,
@@ -31,6 +28,7 @@ enum ConstantTag : u1 {
     CONSTANT_Package = 20,
 };
 
+// 常量
 class cp_info {
   public:
     virtual ~cp_info() = default;

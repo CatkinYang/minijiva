@@ -31,6 +31,24 @@
 },
 {
   "directory": "/Users/catkin/workspace/hygon/minijiva/build/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/minijava.dir/accessflag/fieldAccFlg.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/accessflag/fieldAccFlg.cpp",
+  "file": "/Users/catkin/workspace/hygon/minijiva/src/accessflag/fieldAccFlg.cpp",
+  "output": "src/CMakeFiles/minijava.dir/accessflag/fieldAccFlg.cpp.o"
+},
+{
+  "directory": "/Users/catkin/workspace/hygon/minijiva/build/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/minijava.dir/accessflag/methodAccFlg.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/accessflag/methodAccFlg.cpp",
+  "file": "/Users/catkin/workspace/hygon/minijiva/src/accessflag/methodAccFlg.cpp",
+  "output": "src/CMakeFiles/minijava.dir/accessflag/methodAccFlg.cpp.o"
+},
+{
+  "directory": "/Users/catkin/workspace/hygon/minijiva/build/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/minijava.dir/attribute/attribute_utils.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_utils.cpp",
+  "file": "/Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_utils.cpp",
+  "output": "src/CMakeFiles/minijava.dir/attribute/attribute_utils.cpp.o"
+},
+{
+  "directory": "/Users/catkin/workspace/hygon/minijiva/build/src",
   "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/minijava.dir/classfile.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/classfile.cpp",
   "file": "/Users/catkin/workspace/hygon/minijiva/src/classfile.cpp",
   "output": "src/CMakeFiles/minijava.dir/classfile.cpp.o"
@@ -60,10 +78,28 @@
   "output": "src/accessflag/CMakeFiles/accessflag.dir/classAccFlg.cpp.o"
 },
 {
+  "directory": "/Users/catkin/workspace/hygon/minijiva/build/src/accessflag",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/accessflag.dir/fieldAccFlg.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/accessflag/fieldAccFlg.cpp",
+  "file": "/Users/catkin/workspace/hygon/minijiva/src/accessflag/fieldAccFlg.cpp",
+  "output": "src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.o"
+},
+{
+  "directory": "/Users/catkin/workspace/hygon/minijiva/build/src/accessflag",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/accessflag.dir/methodAccFlg.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/accessflag/methodAccFlg.cpp",
+  "file": "/Users/catkin/workspace/hygon/minijiva/src/accessflag/methodAccFlg.cpp",
+  "output": "src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.o"
+},
+{
   "directory": "/Users/catkin/workspace/hygon/minijiva/build/src/constant",
   "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/constant.dir/cp_info.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/constant/cp_info.cpp",
   "file": "/Users/catkin/workspace/hygon/minijiva/src/constant/cp_info.cpp",
   "output": "src/constant/CMakeFiles/constant.dir/cp_info.cpp.o"
+},
+{
+  "directory": "/Users/catkin/workspace/hygon/minijiva/build/src/attribute",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/attribute.dir/attribute_utils.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_utils.cpp",
+  "file": "/Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_utils.cpp",
+  "output": "src/attribute/CMakeFiles/attribute.dir/attribute_utils.cpp.o"
 },
 {
   "directory": "/Users/catkin/workspace/hygon/minijiva/build/test",

@@ -13,7 +13,7 @@ namespace mini {
 class parser {
   public:
     parser() = default;
-    std::unique_ptr<classfile> fileToObject(std::string filename);
+    static std::unique_ptr<classfile> fileToObject(std::string filename);
 };
 
 } // namespace mini

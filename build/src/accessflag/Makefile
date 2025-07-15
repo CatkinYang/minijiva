@@ -209,6 +209,54 @@ classAccFlg.cpp.s:
 	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/accessflag/CMakeFiles/accessflag.dir/build.make src/accessflag/CMakeFiles/accessflag.dir/classAccFlg.cpp.s
 .PHONY : classAccFlg.cpp.s
 
+fieldAccFlg.o: fieldAccFlg.cpp.o
+.PHONY : fieldAccFlg.o
+
+# target to build an object file
+fieldAccFlg.cpp.o:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/accessflag/CMakeFiles/accessflag.dir/build.make src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.o
+.PHONY : fieldAccFlg.cpp.o
+
+fieldAccFlg.i: fieldAccFlg.cpp.i
+.PHONY : fieldAccFlg.i
+
+# target to preprocess a source file
+fieldAccFlg.cpp.i:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/accessflag/CMakeFiles/accessflag.dir/build.make src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.i
+.PHONY : fieldAccFlg.cpp.i
+
+fieldAccFlg.s: fieldAccFlg.cpp.s
+.PHONY : fieldAccFlg.s
+
+# target to generate assembly for a file
+fieldAccFlg.cpp.s:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/accessflag/CMakeFiles/accessflag.dir/build.make src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.s
+.PHONY : fieldAccFlg.cpp.s
+
+methodAccFlg.o: methodAccFlg.cpp.o
+.PHONY : methodAccFlg.o
+
+# target to build an object file
+methodAccFlg.cpp.o:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/accessflag/CMakeFiles/accessflag.dir/build.make src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.o
+.PHONY : methodAccFlg.cpp.o
+
+methodAccFlg.i: methodAccFlg.cpp.i
+.PHONY : methodAccFlg.i
+
+# target to preprocess a source file
+methodAccFlg.cpp.i:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/accessflag/CMakeFiles/accessflag.dir/build.make src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.i
+.PHONY : methodAccFlg.cpp.i
+
+methodAccFlg.s: methodAccFlg.cpp.s
+.PHONY : methodAccFlg.s
+
+# target to generate assembly for a file
+methodAccFlg.cpp.s:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/accessflag/CMakeFiles/accessflag.dir/build.make src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.s
+.PHONY : methodAccFlg.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -226,6 +274,12 @@ help:
 	@echo "... classAccFlg.o"
 	@echo "... classAccFlg.i"
 	@echo "... classAccFlg.s"
+	@echo "... fieldAccFlg.o"
+	@echo "... fieldAccFlg.i"
+	@echo "... fieldAccFlg.s"
+	@echo "... methodAccFlg.o"
+	@echo "... methodAccFlg.i"
+	@echo "... methodAccFlg.s"
 .PHONY : help
 
 

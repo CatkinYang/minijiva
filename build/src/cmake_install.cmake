@@ -41,6 +41,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/catkin/workspace/hygon/minijiva/build/src/accessflag/cmake_install.cmake")
   include("/Users/catkin/workspace/hygon/minijiva/build/src/constant/cmake_install.cmake")
+  include("/Users/catkin/workspace/hygon/minijiva/build/src/attribute/cmake_install.cmake")
 
 endif()
 

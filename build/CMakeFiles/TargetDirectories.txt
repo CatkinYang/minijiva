@@ -61,6 +61,14 @@
 /Users/catkin/workspace/hygon/minijiva/build/src/constant/CMakeFiles/install.dir
 /Users/catkin/workspace/hygon/minijiva/build/src/constant/CMakeFiles/install/local.dir
 /Users/catkin/workspace/hygon/minijiva/build/src/constant/CMakeFiles/install/strip.dir
+/Users/catkin/workspace/hygon/minijiva/build/src/attribute/CMakeFiles/attribute.dir
+/Users/catkin/workspace/hygon/minijiva/build/src/attribute/CMakeFiles/test.dir
+/Users/catkin/workspace/hygon/minijiva/build/src/attribute/CMakeFiles/edit_cache.dir
+/Users/catkin/workspace/hygon/minijiva/build/src/attribute/CMakeFiles/rebuild_cache.dir
+/Users/catkin/workspace/hygon/minijiva/build/src/attribute/CMakeFiles/list_install_components.dir
+/Users/catkin/workspace/hygon/minijiva/build/src/attribute/CMakeFiles/install.dir
+/Users/catkin/workspace/hygon/minijiva/build/src/attribute/CMakeFiles/install/local.dir
+/Users/catkin/workspace/hygon/minijiva/build/src/attribute/CMakeFiles/install/strip.dir
 /Users/catkin/workspace/hygon/minijiva/build/test/CMakeFiles/build-tests.dir
 /Users/catkin/workspace/hygon/minijiva/build/test/CMakeFiles/test_classreader.dir
 /Users/catkin/workspace/hygon/minijiva/build/test/CMakeFiles/test_parser.dir

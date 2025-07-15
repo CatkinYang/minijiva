@@ -93,23 +93,27 @@ clean: test/clean
 src/all: src/CMakeFiles/minijava.dir/all
 src/all: src/accessflag/all
 src/all: src/constant/all
+src/all: src/attribute/all
 .PHONY : src/all
 
 # Recursive "codegen" directory target.
 src/codegen: src/CMakeFiles/minijava.dir/codegen
 src/codegen: src/accessflag/codegen
 src/codegen: src/constant/codegen
+src/codegen: src/attribute/codegen
 .PHONY : src/codegen
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/accessflag/preinstall
 src/preinstall: src/constant/preinstall
+src/preinstall: src/attribute/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/minijava.dir/clean
 src/clean: src/accessflag/clean
 src/clean: src/constant/clean
+src/clean: src/attribute/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -130,6 +134,25 @@ src/accessflag/preinstall:
 # Recursive "clean" directory target.
 src/accessflag/clean: src/accessflag/CMakeFiles/accessflag.dir/clean
 .PHONY : src/accessflag/clean
+
+#=============================================================================
+# Directory level rules for directory src/attribute
+
+# Recursive "all" directory target.
+src/attribute/all: src/attribute/CMakeFiles/attribute.dir/all
+.PHONY : src/attribute/all
+
+# Recursive "codegen" directory target.
+src/attribute/codegen: src/attribute/CMakeFiles/attribute.dir/codegen
+.PHONY : src/attribute/codegen
+
+# Recursive "preinstall" directory target.
+src/attribute/preinstall:
+.PHONY : src/attribute/preinstall
+
+# Recursive "clean" directory target.
+src/attribute/clean: src/attribute/CMakeFiles/attribute.dir/clean
+.PHONY : src/attribute/clean
 
 #=============================================================================
 # Directory level rules for directory src/constant
@@ -265,7 +288,7 @@ third_party/googletest/googletest/clean: third_party/googletest/googletest/CMake
 third_party/googletest/googlemock/CMakeFiles/gmock.dir/all: third_party/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googlemock/CMakeFiles/gmock.dir/build.make third_party/googletest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googlemock/CMakeFiles/gmock.dir/build.make third_party/googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=3,4 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=7,8 "Built target gmock"
 .PHONY : third_party/googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -282,7 +305,7 @@ gmock: third_party/googletest/googlemock/CMakeFiles/gmock.dir/rule
 # codegen rule for target.
 third_party/googletest/googlemock/CMakeFiles/gmock.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googlemock/CMakeFiles/gmock.dir/build.make third_party/googletest/googlemock/CMakeFiles/gmock.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=3,4 "Finished codegen for target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=7,8 "Finished codegen for target gmock"
 .PHONY : third_party/googletest/googlemock/CMakeFiles/gmock.dir/codegen
 
 # clean rule for target.
@@ -298,7 +321,7 @@ third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/all: third_party/goo
 third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/all: third_party/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=5,6 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=9,10 "Built target gmock_main"
 .PHONY : third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -315,7 +338,7 @@ gmock_main: third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
 # codegen rule for target.
 third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=5,6 "Finished codegen for target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=9,10 "Finished codegen for target gmock_main"
 .PHONY : third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/codegen
 
 # clean rule for target.
@@ -330,7 +353,7 @@ third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
 third_party/googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googletest/CMakeFiles/gtest.dir/build.make third_party/googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googletest/CMakeFiles/gtest.dir/build.make third_party/googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=7,8 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=11,12 "Built target gtest"
 .PHONY : third_party/googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,7 +370,7 @@ gtest: third_party/googletest/googletest/CMakeFiles/gtest.dir/rule
 # codegen rule for target.
 third_party/googletest/googletest/CMakeFiles/gtest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googletest/CMakeFiles/gtest.dir/build.make third_party/googletest/googletest/CMakeFiles/gtest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=7,8 "Finished codegen for target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=11,12 "Finished codegen for target gtest"
 .PHONY : third_party/googletest/googletest/CMakeFiles/gtest.dir/codegen
 
 # clean rule for target.
@@ -362,7 +385,7 @@ third_party/googletest/googletest/CMakeFiles/gtest.dir/clean:
 third_party/googletest/googletest/CMakeFiles/gtest_main.dir/all: third_party/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googletest/CMakeFiles/gtest_main.dir/build.make third_party/googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googletest/CMakeFiles/gtest_main.dir/build.make third_party/googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=9,10 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=13,14 "Built target gtest_main"
 .PHONY : third_party/googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -379,7 +402,7 @@ gtest_main: third_party/googletest/googletest/CMakeFiles/gtest_main.dir/rule
 # codegen rule for target.
 third_party/googletest/googletest/CMakeFiles/gtest_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party/googletest/googletest/CMakeFiles/gtest_main.dir/build.make third_party/googletest/googletest/CMakeFiles/gtest_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=9,10 "Finished codegen for target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=13,14 "Finished codegen for target gtest_main"
 .PHONY : third_party/googletest/googletest/CMakeFiles/gtest_main.dir/codegen
 
 # clean rule for target.
@@ -393,14 +416,15 @@ third_party/googletest/googletest/CMakeFiles/gtest_main.dir/clean:
 # All Build rule for target.
 src/CMakeFiles/minijava.dir/all: src/accessflag/CMakeFiles/accessflag.dir/all
 src/CMakeFiles/minijava.dir/all: src/constant/CMakeFiles/constant.dir/all
+src/CMakeFiles/minijava.dir/all: src/attribute/CMakeFiles/attribute.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=11,12,13,14,15,16 "Built target minijava"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23 "Built target minijava"
 .PHONY : src/CMakeFiles/minijava.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/minijava.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/minijava.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/minijava.dir/rule
@@ -412,7 +436,7 @@ minijava: src/CMakeFiles/minijava.dir/rule
 # codegen rule for target.
 src/CMakeFiles/minijava.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=11,12,13,14,15,16 "Finished codegen for target minijava"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23 "Finished codegen for target minijava"
 .PHONY : src/CMakeFiles/minijava.dir/codegen
 
 # clean rule for target.
@@ -427,12 +451,12 @@ src/CMakeFiles/minijava.dir/clean:
 src/accessflag/CMakeFiles/accessflag.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/accessflag/CMakeFiles/accessflag.dir/build.make src/accessflag/CMakeFiles/accessflag.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/accessflag/CMakeFiles/accessflag.dir/build.make src/accessflag/CMakeFiles/accessflag.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=1 "Built target accessflag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=1,2,3 "Built target accessflag"
 .PHONY : src/accessflag/CMakeFiles/accessflag.dir/all
 
 # Build rule for subdir invocation for target.
 src/accessflag/CMakeFiles/accessflag.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/accessflag/CMakeFiles/accessflag.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 0
 .PHONY : src/accessflag/CMakeFiles/accessflag.dir/rule
@@ -444,7 +468,7 @@ accessflag: src/accessflag/CMakeFiles/accessflag.dir/rule
 # codegen rule for target.
 src/accessflag/CMakeFiles/accessflag.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/accessflag/CMakeFiles/accessflag.dir/build.make src/accessflag/CMakeFiles/accessflag.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=1 "Finished codegen for target accessflag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target accessflag"
 .PHONY : src/accessflag/CMakeFiles/accessflag.dir/codegen
 
 # clean rule for target.
@@ -459,7 +483,7 @@ src/accessflag/CMakeFiles/accessflag.dir/clean:
 src/constant/CMakeFiles/constant.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/constant/CMakeFiles/constant.dir/build.make src/constant/CMakeFiles/constant.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/constant/CMakeFiles/constant.dir/build.make src/constant/CMakeFiles/constant.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=2 "Built target constant"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=6 "Built target constant"
 .PHONY : src/constant/CMakeFiles/constant.dir/all
 
 # Build rule for subdir invocation for target.
@@ -476,13 +500,45 @@ constant: src/constant/CMakeFiles/constant.dir/rule
 # codegen rule for target.
 src/constant/CMakeFiles/constant.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/constant/CMakeFiles/constant.dir/build.make src/constant/CMakeFiles/constant.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=2 "Finished codegen for target constant"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=6 "Finished codegen for target constant"
 .PHONY : src/constant/CMakeFiles/constant.dir/codegen
 
 # clean rule for target.
 src/constant/CMakeFiles/constant.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/constant/CMakeFiles/constant.dir/build.make src/constant/CMakeFiles/constant.dir/clean
 .PHONY : src/constant/CMakeFiles/constant.dir/clean
+
+#=============================================================================
+# Target rules for target src/attribute/CMakeFiles/attribute.dir
+
+# All Build rule for target.
+src/attribute/CMakeFiles/attribute.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/attribute/CMakeFiles/attribute.dir/build.make src/attribute/CMakeFiles/attribute.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/attribute/CMakeFiles/attribute.dir/build.make src/attribute/CMakeFiles/attribute.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=4,5 "Built target attribute"
+.PHONY : src/attribute/CMakeFiles/attribute.dir/all
+
+# Build rule for subdir invocation for target.
+src/attribute/CMakeFiles/attribute.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/attribute/CMakeFiles/attribute.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 0
+.PHONY : src/attribute/CMakeFiles/attribute.dir/rule
+
+# Convenience name for target.
+attribute: src/attribute/CMakeFiles/attribute.dir/rule
+.PHONY : attribute
+
+# codegen rule for target.
+src/attribute/CMakeFiles/attribute.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src/attribute/CMakeFiles/attribute.dir/build.make src/attribute/CMakeFiles/attribute.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=4,5 "Finished codegen for target attribute"
+.PHONY : src/attribute/CMakeFiles/attribute.dir/codegen
+
+# clean rule for target.
+src/attribute/CMakeFiles/attribute.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/attribute/CMakeFiles/attribute.dir/build.make src/attribute/CMakeFiles/attribute.dir/clean
+.PHONY : src/attribute/CMakeFiles/attribute.dir/clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/build-tests.dir
@@ -497,7 +553,7 @@ test/CMakeFiles/build-tests.dir/all: test/CMakeFiles/test_parser.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/build-tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/build-tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/build-tests.dir/rule
@@ -526,14 +582,15 @@ test/CMakeFiles/test_classreader.dir/all: third_party/googletest/googletest/CMak
 test/CMakeFiles/test_classreader.dir/all: src/CMakeFiles/minijava.dir/all
 test/CMakeFiles/test_classreader.dir/all: src/accessflag/CMakeFiles/accessflag.dir/all
 test/CMakeFiles/test_classreader.dir/all: src/constant/CMakeFiles/constant.dir/all
+test/CMakeFiles/test_classreader.dir/all: src/attribute/CMakeFiles/attribute.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_classreader.dir/build.make test/CMakeFiles/test_classreader.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_classreader.dir/build.make test/CMakeFiles/test_classreader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=17,18 "Built target test_classreader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=24,25 "Built target test_classreader"
 .PHONY : test/CMakeFiles/test_classreader.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_classreader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_classreader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_classreader.dir/rule
@@ -545,7 +602,7 @@ test_classreader: test/CMakeFiles/test_classreader.dir/rule
 # codegen rule for target.
 test/CMakeFiles/test_classreader.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_classreader.dir/build.make test/CMakeFiles/test_classreader.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=17,18 "Finished codegen for target test_classreader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=24,25 "Finished codegen for target test_classreader"
 .PHONY : test/CMakeFiles/test_classreader.dir/codegen
 
 # clean rule for target.
@@ -561,14 +618,15 @@ test/CMakeFiles/test_parser.dir/all: third_party/googletest/googletest/CMakeFile
 test/CMakeFiles/test_parser.dir/all: src/CMakeFiles/minijava.dir/all
 test/CMakeFiles/test_parser.dir/all: src/accessflag/CMakeFiles/accessflag.dir/all
 test/CMakeFiles/test_parser.dir/all: src/constant/CMakeFiles/constant.dir/all
+test/CMakeFiles/test_parser.dir/all: src/attribute/CMakeFiles/attribute.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=19,20 "Built target test_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=26,27 "Built target test_parser"
 .PHONY : test/CMakeFiles/test_parser.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/catkin/workspace/hygon/minijiva/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_parser.dir/rule
@@ -580,7 +638,7 @@ test_parser: test/CMakeFiles/test_parser.dir/rule
 # codegen rule for target.
 test/CMakeFiles/test_parser.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=19,20 "Finished codegen for target test_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=26,27 "Finished codegen for target test_parser"
 .PHONY : test/CMakeFiles/test_parser.dir/codegen
 
 # clean rule for target.

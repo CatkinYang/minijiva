@@ -86,7 +86,37 @@ src/accessflag/CMakeFiles/accessflag.dir/classAccFlg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/accessflag.dir/classAccFlg.cpp.s"
 	cd /Users/catkin/workspace/hygon/minijiva/build/src/accessflag && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/catkin/workspace/hygon/minijiva/src/accessflag/classAccFlg.cpp -o CMakeFiles/accessflag.dir/classAccFlg.cpp.s
 
+src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.o: src/accessflag/CMakeFiles/accessflag.dir/flags.make
+src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.o: /Users/catkin/workspace/hygon/minijiva/src/accessflag/fieldAccFlg.cpp
+src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.o: src/accessflag/CMakeFiles/accessflag.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.o"
+	cd /Users/catkin/workspace/hygon/minijiva/build/src/accessflag && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.o -MF CMakeFiles/accessflag.dir/fieldAccFlg.cpp.o.d -o CMakeFiles/accessflag.dir/fieldAccFlg.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/accessflag/fieldAccFlg.cpp
+
+src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/accessflag.dir/fieldAccFlg.cpp.i"
+	cd /Users/catkin/workspace/hygon/minijiva/build/src/accessflag && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/catkin/workspace/hygon/minijiva/src/accessflag/fieldAccFlg.cpp > CMakeFiles/accessflag.dir/fieldAccFlg.cpp.i
+
+src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/accessflag.dir/fieldAccFlg.cpp.s"
+	cd /Users/catkin/workspace/hygon/minijiva/build/src/accessflag && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/catkin/workspace/hygon/minijiva/src/accessflag/fieldAccFlg.cpp -o CMakeFiles/accessflag.dir/fieldAccFlg.cpp.s
+
+src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.o: src/accessflag/CMakeFiles/accessflag.dir/flags.make
+src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.o: /Users/catkin/workspace/hygon/minijiva/src/accessflag/methodAccFlg.cpp
+src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.o: src/accessflag/CMakeFiles/accessflag.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/catkin/workspace/hygon/minijiva/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.o"
+	cd /Users/catkin/workspace/hygon/minijiva/build/src/accessflag && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.o -MF CMakeFiles/accessflag.dir/methodAccFlg.cpp.o.d -o CMakeFiles/accessflag.dir/methodAccFlg.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/accessflag/methodAccFlg.cpp
+
+src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/accessflag.dir/methodAccFlg.cpp.i"
+	cd /Users/catkin/workspace/hygon/minijiva/build/src/accessflag && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/catkin/workspace/hygon/minijiva/src/accessflag/methodAccFlg.cpp > CMakeFiles/accessflag.dir/methodAccFlg.cpp.i
+
+src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/accessflag.dir/methodAccFlg.cpp.s"
+	cd /Users/catkin/workspace/hygon/minijiva/build/src/accessflag && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/catkin/workspace/hygon/minijiva/src/accessflag/methodAccFlg.cpp -o CMakeFiles/accessflag.dir/methodAccFlg.cpp.s
+
 accessflag: src/accessflag/CMakeFiles/accessflag.dir/classAccFlg.cpp.o
+accessflag: src/accessflag/CMakeFiles/accessflag.dir/fieldAccFlg.cpp.o
+accessflag: src/accessflag/CMakeFiles/accessflag.dir/methodAccFlg.cpp.o
 accessflag: src/accessflag/CMakeFiles/accessflag.dir/build.make
 .PHONY : accessflag
 

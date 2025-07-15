@@ -1,4 +1,6 @@
+#pragma once
 #include <cstdint>
+#include <iostream>
 namespace mini {
 using u1 = uint8_t;
 using u2 = uint16_t;
