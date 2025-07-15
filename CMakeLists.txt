@@ -30,8 +30,7 @@ endif()
 # ##############################################################################
 
 set(PRJ_BUILD_SUPPORT_DIR "${CMAKE_SOURCE_DIR}/build_support")
-set(PRJ_CLANG_SEARCH_PATH
-    "/usr/local/bin" "/usr/bin")
+set(PRJ_CLANG_SEARCH_PATH "/usr/local/bin" "/usr/bin")
 
 # ##############################################################################
 # CTest
@@ -53,7 +52,7 @@ set(CMAKE_CXX_FLAGS_DEBUG
     "${CMAKE_CXX_FLAGS_DEBUG} -Wno-unused-parameter -Wno-attributes") # TODO:
                                                                       # remove
 set(CMAKE_CXX_FLAGS_DEBUG
-    "${CMAKE_CXX_FLAGS_DEBUG} -O0 -ggdb -fsanitize=${lox_SANITIZER} -fno-omit-frame-pointer -fno-optimize-sibling-calls"
+    "${CMAKE_CXX_FLAGS_DEBUG} -O0 -ggdb -fsanitize=${PRJ_SANITIZER} -fno-omit-frame-pointer -fno-optimize-sibling-calls"
 )
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 

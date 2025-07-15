@@ -1,28 +1,62 @@
 #pragma once
+#include "attribute/attribute_info.hpp"
+#include "constant/cp_info.hpp"
+#include "field/field_info.hpp"
+#include "marco.hpp"
+#include "method/method_info.hpp"
 #include <cstdint>
+#include <memory>
+#include <string>
+#include <vector>
+
 namespace mini {
-// 类文件 类
-//
-// 需要有一个parser将 class文件  转换成 classFile类
-// 1. 魔数
-// 2. 次版本号
-// 3. 主版本号
-// 4. 常量池入口
+
+class cp_info;
+class interface;
+class field_info;
+class method_info;
+class attribute_info;
+
+// 类文件，由minijava的parser模块解析class文件创建
 class classfile {
+    friend class parser;
+
   public:
-    // 构造函数
+    classfile() = default;
+    classfile(const classfile &) = delete;
+    classfile(classfile &&) = delete;
+    classfile &operator=(const classfile &) = delete;
+    classfile &operator=(classfile &&) = delete;
+    static classfile *create() = delete;
+
+  public:
+    // 根据索引从常量池中获取类名
+    std::string getClassName(u2 index) const;
+    // 根据索引从常量池中获取Utf8字符串
+    std::string getUtf8(u2 index) const;
+
   private:
-    uint32_t magicNumber_;   // 4字节 魔数
-    uint16_t subVersion_;    // 2字节 次版本号
-    uint16_t majorVersion_;  // 2字节 主版本号
-    uint16_t constPoolNum_;  // 2字节 常量池大小
-    ;                        // 常量池，需要依据常量池大小进行初始化？
-    uint16_t accessFlags_;   // 2字节 访问标识
-    uint16_t classRef_;      // 2字节，类索引
-    uint16_t superClassRef_; // 2字节 父类索引
-    uint16_t interfaceNum_;  // 2字节 接口索引个数
-    uint16_t filedNun_;      // 2字节 字段个数
-    uint16_t methodNum_;     // 2字节 方法个数
-    uint16_t attrNum_;       // 2字节 属性个数
+    u4 magic_;
+    u2 minor_version_;
+    u2 major_version_;
+    u2 constant_pool_count_;
+    std::vector<std::unique_ptr<mini::cp_info>> constant_pool_;
+
+    u2 access_flags_;
+    u2 this_class_;
+    u2 super_class_;
+
+    u2 interfaces_count_;
+    std::vector<u2> interfaces_;
+
+    u2 fields_count_;
+    std::vector<std::unique_ptr<mini::field_info>> fields_;
+
+    u2 methods_count_;
+    std::vector<std::unique_ptr<mini::method_info>> methods_;
+
+    u2 attributes_count_;
+    std::vector<std::unique_ptr<mini::attribute_info>> attributes_;
 };
+
 } // namespace mini

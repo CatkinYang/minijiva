@@ -1,0 +1,68 @@
+\doxysection{classfile.\+hpp}
+\hypertarget{classfile_8hpp_source}{}\label{classfile_8hpp_source}\index{src/include/classfile.hpp@{src/include/classfile.hpp}}
+\mbox{\hyperlink{classfile_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{attribute__info_8hpp}{attribute/attribute\_info.hpp}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{cp__info_8hpp}{constant/cp\_info.hpp}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{field__info_8hpp}{field/field\_info.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{marco_8hpp}{marco.hpp}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{method__info_8hpp}{method/method\_info.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemini}{mini}}\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmini_1_1cp__info}{cp\_info}};}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }interface;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmini_1_1field__info}{field\_info}};}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmini_1_1method__info}{method\_info}};}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmini_1_1attribute__info}{attribute\_info}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ 类文件}}
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmini_1_1classfile_af2e6118d06343115ebeaa213afc1c00a}{classfile}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmini_1_1classfile_a8de78aa991dff0fc519d5c721ea49733}{parser}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classmini_1_1classfile_af2e6118d06343115ebeaa213afc1c00a}{classfile}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{classmini_1_1classfile_a81ed2b26dbff4ea57f9e5ab00720b569}{classfile}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classmini_1_1classfile_af2e6118d06343115ebeaa213afc1c00a}{classfile}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classmini_1_1classfile_a18dc0bd9223b11309d4be244087ccb18}{classfile}}(\mbox{\hyperlink{classmini_1_1classfile_af2e6118d06343115ebeaa213afc1c00a}{classfile}}\ \&\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classmini_1_1classfile_af2e6118d06343115ebeaa213afc1c00a}{classfile}}\ \&\mbox{\hyperlink{classmini_1_1classfile_aeb17ef4d981f11b82113ab4b4fd3ef56}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classmini_1_1classfile_af2e6118d06343115ebeaa213afc1c00a}{classfile}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classmini_1_1classfile_af2e6118d06343115ebeaa213afc1c00a}{classfile}}\ \&\mbox{\hyperlink{classmini_1_1classfile_a73c505893c9698572b885645a84a2e5e}{operator=}}(\mbox{\hyperlink{classmini_1_1classfile_af2e6118d06343115ebeaa213afc1c00a}{classfile}}\ \&\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classmini_1_1classfile_af2e6118d06343115ebeaa213afc1c00a}{classfile}}\ *\mbox{\hyperlink{classmini_1_1classfile_abfa7496862f1a5823374c546663e8ade}{create}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ 获取类名}}
+\DoxyCodeLine{00034\ \ \ \ \ std::string\ \mbox{\hyperlink{classmini_1_1classfile_addff89db257e952f2d4bdb15dcdbd9aa}{getClassName}}(\mbox{\hyperlink{namespacemini_a5dff72e752c4cadca27fa4f3932ca9b3}{u2}}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ 获取Utf8字符串}}
+\DoxyCodeLine{00036\ \ \ \ \ std::string\ \mbox{\hyperlink{classmini_1_1classfile_a9c294085f75180443ad814f8a355bfe6}{getUtf8}}(\mbox{\hyperlink{namespacemini_a5dff72e752c4cadca27fa4f3932ca9b3}{u2}}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{namespacemini_a2d55f8a70d25aebb6bd265459d75cb4f}{u4}}\ magic\_;}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{namespacemini_a5dff72e752c4cadca27fa4f3932ca9b3}{u2}}\ minor\_version\_;}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{namespacemini_a5dff72e752c4cadca27fa4f3932ca9b3}{u2}}\ major\_version\_;}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{namespacemini_a5dff72e752c4cadca27fa4f3932ca9b3}{u2}}\ constant\_pool\_count\_;}
+\DoxyCodeLine{00043\ \ \ \ \ std::vector<std::unique\_ptr<mini::cp\_info>>\ constant\_pool\_;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{namespacemini_a5dff72e752c4cadca27fa4f3932ca9b3}{u2}}\ access\_flags\_;}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{namespacemini_a5dff72e752c4cadca27fa4f3932ca9b3}{u2}}\ this\_class\_;}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{namespacemini_a5dff72e752c4cadca27fa4f3932ca9b3}{u2}}\ super\_class\_;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{namespacemini_a5dff72e752c4cadca27fa4f3932ca9b3}{u2}}\ interfaces\_count\_;}
+\DoxyCodeLine{00050\ \ \ \ \ std::vector<u2>\ interfaces\_;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{namespacemini_a5dff72e752c4cadca27fa4f3932ca9b3}{u2}}\ fields\_count\_;}
+\DoxyCodeLine{00053\ \ \ \ \ std::vector<std::unique\_ptr<mini::field\_info>>\ fields\_;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{namespacemini_a5dff72e752c4cadca27fa4f3932ca9b3}{u2}}\ methods\_count\_;}
+\DoxyCodeLine{00056\ \ \ \ \ std::vector<std::unique\_ptr<mini::method\_info>>\ methods\_;}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//\ u2\ attributes\_count;}}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//\ std::vector<std::unique\_ptr<mini::attribute\_info>>\ attributes\_;}}
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \}\ \textcolor{comment}{//\ namespace\ mini}}
+
+\end{DoxyCode}

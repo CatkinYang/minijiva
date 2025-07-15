@@ -1,0 +1,32 @@
+\doxysection{minijava.\+hpp}
+\hypertarget{minijava_8hpp_source}{}\label{minijava_8hpp_source}\index{src/include/minijava.hpp@{src/include/minijava.hpp}}
+\mbox{\hyperlink{minijava_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ minijava\ 主程序\ 需要的模块}}
+\DoxyCodeLine{00002\ \textcolor{comment}{1.\ parser\ 类加载器子系统\ 解析class文件，读取它的binary，转换成classfile}}
+\DoxyCodeLine{00003\ \textcolor{comment}{2.\ classfile\ 解析后的class文件转换成classfile文件}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ \ \ -\/\ \ 魔数\ ✅}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ -\/\ \ 次版本、主版本\ ✅}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ -\/\ \ 常量池入口\ ✅}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ \ \ -\/\ \ 常量池\ ✅}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ \ \ -\/\ \ 访问标志\ ✅}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ \ \ -\/\ \ 类索引\ ✅}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ \ \ -\/\ \ 父类索引\ ✅}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ \ \ -\/\ \ 接口数量、接口索引集合\ ✅}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ \ \ -\/\ \ 字段表数量、字段表\ ✅}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ \ \ -\/\ \ 方法表数量、方法表\ ✅}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ \ \ -\/\ \ 属性表数量、属性表\ ✅}}
+\DoxyCodeLine{00015\ \textcolor{comment}{3.\ engine\ \ \ \ 执行引擎，用于根据engine的字节码执行程序}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ \ \ -\/\ 运行时栈帧}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ \ \ \ \ \ -\/\ 每一个栈帧：}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/\ 局部变量表}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/\ 操作数栈}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/\ 指向方法已解析的常量池引用}}
+\DoxyCodeLine{00021\ \textcolor{comment}{4.\ 内存空间}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ \ \ -\/\ 方法区}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ \ \ -\/\ heap}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ \ \ -\/\ stack}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ \ \ -\/\ local\ method\ stack}}
+\DoxyCodeLine{00026\ \textcolor{comment}{*/}}
+
+\end{DoxyCode}

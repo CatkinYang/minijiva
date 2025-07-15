@@ -1,1 +1,3 @@
-#include "./include/minijava.hpp"
+#include "minijava.hpp"
+
+namespace mini {}
