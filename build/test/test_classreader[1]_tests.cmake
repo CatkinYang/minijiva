@@ -1,0 +1,5 @@
+add_test([=[classReaderTest.ReadBytesCorrectly]=]  /Users/catkin/workspace/hygon/minijiva/build/test/test_classreader [==[--gtest_filter=classReaderTest.ReadBytesCorrectly]==] --gtest_also_run_disabled_tests [==[--gtest_output=xml:/Users/catkin/workspace/hygon/minijiva/build/test/test_classreader.xml]==] [==[--gtest_catch_exceptions=0]==])
+set_tests_properties([=[classReaderTest.ReadBytesCorrectly]=]  PROPERTIES WORKING_DIRECTORY /Users/catkin/workspace/hygon/minijiva/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==] TIMEOUT 120)
+add_test([=[ParserTest.CheckOutputMessage]=]  /Users/catkin/workspace/hygon/minijiva/build/test/test_classreader [==[--gtest_filter=ParserTest.CheckOutputMessage]==] --gtest_also_run_disabled_tests [==[--gtest_output=xml:/Users/catkin/workspace/hygon/minijiva/build/test/test_classreader.xml]==] [==[--gtest_catch_exceptions=0]==])
+set_tests_properties([=[ParserTest.CheckOutputMessage]=]  PROPERTIES WORKING_DIRECTORY /Users/catkin/workspace/hygon/minijiva/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==] TIMEOUT 120)
+set(  test_classreader_TESTS classReaderTest.ReadBytesCorrectly ParserTest.CheckOutputMessage)
