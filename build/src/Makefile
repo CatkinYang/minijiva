@@ -257,6 +257,30 @@ accessflag/methodAccFlg.cpp.s:
 	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/accessflag/methodAccFlg.cpp.s
 .PHONY : accessflag/methodAccFlg.cpp.s
 
+attribute/attribute_info.o: attribute/attribute_info.cpp.o
+.PHONY : attribute/attribute_info.o
+
+# target to build an object file
+attribute/attribute_info.cpp.o:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/attribute/attribute_info.cpp.o
+.PHONY : attribute/attribute_info.cpp.o
+
+attribute/attribute_info.i: attribute/attribute_info.cpp.i
+.PHONY : attribute/attribute_info.i
+
+# target to preprocess a source file
+attribute/attribute_info.cpp.i:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/attribute/attribute_info.cpp.i
+.PHONY : attribute/attribute_info.cpp.i
+
+attribute/attribute_info.s: attribute/attribute_info.cpp.s
+.PHONY : attribute/attribute_info.s
+
+# target to generate assembly for a file
+attribute/attribute_info.cpp.s:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minijava.dir/build.make src/CMakeFiles/minijava.dir/attribute/attribute_info.cpp.s
+.PHONY : attribute/attribute_info.cpp.s
+
 attribute/attribute_utils.o: attribute/attribute_utils.cpp.o
 .PHONY : attribute/attribute_utils.o
 
@@ -400,6 +424,9 @@ help:
 	@echo "... accessflag/methodAccFlg.o"
 	@echo "... accessflag/methodAccFlg.i"
 	@echo "... accessflag/methodAccFlg.s"
+	@echo "... attribute/attribute_info.o"
+	@echo "... attribute/attribute_info.i"
+	@echo "... attribute/attribute_info.s"
 	@echo "... attribute/attribute_utils.o"
 	@echo "... attribute/attribute_utils.i"
 	@echo "... attribute/attribute_utils.s"

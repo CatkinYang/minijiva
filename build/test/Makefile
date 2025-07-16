@@ -200,18 +200,32 @@ test_classreader/fast:
 .PHONY : test_classreader/fast
 
 # Convenience name for target.
-test/CMakeFiles/test_parser.dir/rule:
-	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_parser.dir/rule
-.PHONY : test/CMakeFiles/test_parser.dir/rule
+test/CMakeFiles/test_parser_split.dir/rule:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_parser_split.dir/rule
+.PHONY : test/CMakeFiles/test_parser_split.dir/rule
 
 # Convenience name for target.
-test_parser: test/CMakeFiles/test_parser.dir/rule
-.PHONY : test_parser
+test_parser_split: test/CMakeFiles/test_parser_split.dir/rule
+.PHONY : test_parser_split
 
 # fast build rule for target.
-test_parser/fast:
-	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/build
-.PHONY : test_parser/fast
+test_parser_split/fast:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser_split.dir/build.make test/CMakeFiles/test_parser_split.dir/build
+.PHONY : test_parser_split/fast
+
+# Convenience name for target.
+test/CMakeFiles/test_parser_sum.dir/rule:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_parser_sum.dir/rule
+.PHONY : test/CMakeFiles/test_parser_sum.dir/rule
+
+# Convenience name for target.
+test_parser_sum: test/CMakeFiles/test_parser_sum.dir/rule
+.PHONY : test_parser_sum
+
+# fast build rule for target.
+test_parser_sum/fast:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser_sum.dir/build.make test/CMakeFiles/test_parser_sum.dir/build
+.PHONY : test_parser_sum/fast
 
 test_classreader.o: test_classreader.cpp.o
 .PHONY : test_classreader.o
@@ -237,29 +251,53 @@ test_classreader.cpp.s:
 	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_classreader.dir/build.make test/CMakeFiles/test_classreader.dir/test_classreader.cpp.s
 .PHONY : test_classreader.cpp.s
 
-test_parser.o: test_parser.cpp.o
-.PHONY : test_parser.o
+test_parser_split.o: test_parser_split.cpp.o
+.PHONY : test_parser_split.o
 
 # target to build an object file
-test_parser.cpp.o:
-	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/test_parser.cpp.o
-.PHONY : test_parser.cpp.o
+test_parser_split.cpp.o:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser_split.dir/build.make test/CMakeFiles/test_parser_split.dir/test_parser_split.cpp.o
+.PHONY : test_parser_split.cpp.o
 
-test_parser.i: test_parser.cpp.i
-.PHONY : test_parser.i
+test_parser_split.i: test_parser_split.cpp.i
+.PHONY : test_parser_split.i
 
 # target to preprocess a source file
-test_parser.cpp.i:
-	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/test_parser.cpp.i
-.PHONY : test_parser.cpp.i
+test_parser_split.cpp.i:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser_split.dir/build.make test/CMakeFiles/test_parser_split.dir/test_parser_split.cpp.i
+.PHONY : test_parser_split.cpp.i
 
-test_parser.s: test_parser.cpp.s
-.PHONY : test_parser.s
+test_parser_split.s: test_parser_split.cpp.s
+.PHONY : test_parser_split.s
 
 # target to generate assembly for a file
-test_parser.cpp.s:
-	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/test_parser.cpp.s
-.PHONY : test_parser.cpp.s
+test_parser_split.cpp.s:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser_split.dir/build.make test/CMakeFiles/test_parser_split.dir/test_parser_split.cpp.s
+.PHONY : test_parser_split.cpp.s
+
+test_parser_sum.o: test_parser_sum.cpp.o
+.PHONY : test_parser_sum.o
+
+# target to build an object file
+test_parser_sum.cpp.o:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser_sum.dir/build.make test/CMakeFiles/test_parser_sum.dir/test_parser_sum.cpp.o
+.PHONY : test_parser_sum.cpp.o
+
+test_parser_sum.i: test_parser_sum.cpp.i
+.PHONY : test_parser_sum.i
+
+# target to preprocess a source file
+test_parser_sum.cpp.i:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser_sum.dir/build.make test/CMakeFiles/test_parser_sum.dir/test_parser_sum.cpp.i
+.PHONY : test_parser_sum.cpp.i
+
+test_parser_sum.s: test_parser_sum.cpp.s
+.PHONY : test_parser_sum.s
+
+# target to generate assembly for a file
+test_parser_sum.cpp.s:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser_sum.dir/build.make test/CMakeFiles/test_parser_sum.dir/test_parser_sum.cpp.s
+.PHONY : test_parser_sum.cpp.s
 
 # Help Target
 help:
@@ -276,13 +314,17 @@ help:
 	@echo "... test"
 	@echo "... build-tests"
 	@echo "... test_classreader"
-	@echo "... test_parser"
+	@echo "... test_parser_split"
+	@echo "... test_parser_sum"
 	@echo "... test_classreader.o"
 	@echo "... test_classreader.i"
 	@echo "... test_classreader.s"
-	@echo "... test_parser.o"
-	@echo "... test_parser.i"
-	@echo "... test_parser.s"
+	@echo "... test_parser_split.o"
+	@echo "... test_parser_split.i"
+	@echo "... test_parser_split.s"
+	@echo "... test_parser_sum.o"
+	@echo "... test_parser_sum.i"
+	@echo "... test_parser_sum.s"
 .PHONY : help
 
 

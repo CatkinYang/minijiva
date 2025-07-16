@@ -11,8 +11,10 @@ class attribute_info {
   public:
     u2 attribute_name_index_;
     u4 attributes_length_;
+    // 虚函数，子类根据类型的不同，进行不同的读取
     virtual void readInfo(classReader &reader, const classfile &cf) = 0;
     virtual ~attribute_info() = default;
+    // 打印不同的输出信息
     virtual void print(std::ostream &os, const classfile &cf) const = 0;
 };
 
@@ -27,7 +29,7 @@ class raw_attribute : public attribute_info {
             info_[i] = reader.readU1();
     }
 
-    void print(std::ostream &os, const classfile &cf) const override {}
+    void print(std::ostream &os, const classfile &cf) const override;
 };
 
 } // namespace mini

@@ -71,7 +71,8 @@
 /Users/catkin/workspace/hygon/minijiva/build/src/attribute/CMakeFiles/install/strip.dir
 /Users/catkin/workspace/hygon/minijiva/build/test/CMakeFiles/build-tests.dir
 /Users/catkin/workspace/hygon/minijiva/build/test/CMakeFiles/test_classreader.dir
-/Users/catkin/workspace/hygon/minijiva/build/test/CMakeFiles/test_parser.dir
+/Users/catkin/workspace/hygon/minijiva/build/test/CMakeFiles/test_parser_split.dir
+/Users/catkin/workspace/hygon/minijiva/build/test/CMakeFiles/test_parser_sum.dir
 /Users/catkin/workspace/hygon/minijiva/build/test/CMakeFiles/test.dir
 /Users/catkin/workspace/hygon/minijiva/build/test/CMakeFiles/edit_cache.dir
 /Users/catkin/workspace/hygon/minijiva/build/test/CMakeFiles/rebuild_cache.dir

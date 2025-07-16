@@ -185,6 +185,30 @@ attribute/fast:
 	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/attribute/CMakeFiles/attribute.dir/build.make src/attribute/CMakeFiles/attribute.dir/build
 .PHONY : attribute/fast
 
+attribute_info.o: attribute_info.cpp.o
+.PHONY : attribute_info.o
+
+# target to build an object file
+attribute_info.cpp.o:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/attribute/CMakeFiles/attribute.dir/build.make src/attribute/CMakeFiles/attribute.dir/attribute_info.cpp.o
+.PHONY : attribute_info.cpp.o
+
+attribute_info.i: attribute_info.cpp.i
+.PHONY : attribute_info.i
+
+# target to preprocess a source file
+attribute_info.cpp.i:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/attribute/CMakeFiles/attribute.dir/build.make src/attribute/CMakeFiles/attribute.dir/attribute_info.cpp.i
+.PHONY : attribute_info.cpp.i
+
+attribute_info.s: attribute_info.cpp.s
+.PHONY : attribute_info.s
+
+# target to generate assembly for a file
+attribute_info.cpp.s:
+	cd /Users/catkin/workspace/hygon/minijiva/build && $(MAKE) $(MAKESILENT) -f src/attribute/CMakeFiles/attribute.dir/build.make src/attribute/CMakeFiles/attribute.dir/attribute_info.cpp.s
+.PHONY : attribute_info.cpp.s
+
 attribute_utils.o: attribute_utils.cpp.o
 .PHONY : attribute_utils.o
 
@@ -223,6 +247,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... attribute"
+	@echo "... attribute_info.o"
+	@echo "... attribute_info.i"
+	@echo "... attribute_info.s"
 	@echo "... attribute_utils.o"
 	@echo "... attribute_utils.i"
 	@echo "... attribute_utils.s"

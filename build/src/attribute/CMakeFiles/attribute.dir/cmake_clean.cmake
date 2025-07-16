@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "../../lib/libattribute.a"
   "../../lib/libattribute.pdb"
+  "CMakeFiles/attribute.dir/attribute_info.cpp.o"
+  "CMakeFiles/attribute.dir/attribute_info.cpp.o.d"
   "CMakeFiles/attribute.dir/attribute_utils.cpp.o"
   "CMakeFiles/attribute.dir/attribute_utils.cpp.o.d"
 )

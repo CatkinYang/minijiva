@@ -302,17 +302,30 @@ test_classreader/fast:
 .PHONY : test_classreader/fast
 
 #=============================================================================
-# Target rules for targets named test_parser
+# Target rules for targets named test_parser_split
 
 # Build rule for target.
-test_parser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_parser
-.PHONY : test_parser
+test_parser_split: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_parser_split
+.PHONY : test_parser_split
 
 # fast build rule for target.
-test_parser/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/build
-.PHONY : test_parser/fast
+test_parser_split/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser_split.dir/build.make test/CMakeFiles/test_parser_split.dir/build
+.PHONY : test_parser_split/fast
+
+#=============================================================================
+# Target rules for targets named test_parser_sum
+
+# Build rule for target.
+test_parser_sum: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_parser_sum
+.PHONY : test_parser_sum
+
+# fast build rule for target.
+test_parser_sum/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_parser_sum.dir/build.make test/CMakeFiles/test_parser_sum.dir/build
+.PHONY : test_parser_sum/fast
 
 # Help Target
 help:
@@ -337,7 +350,8 @@ help:
 	@echo "... gtest_main"
 	@echo "... minijava"
 	@echo "... test_classreader"
-	@echo "... test_parser"
+	@echo "... test_parser_split"
+	@echo "... test_parser_sum"
 .PHONY : help
 
 

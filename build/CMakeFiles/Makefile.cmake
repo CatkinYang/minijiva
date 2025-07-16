@@ -111,5 +111,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/attribute/CMakeFiles/attribute.dir/DependInfo.cmake"
   "test/CMakeFiles/build-tests.dir/DependInfo.cmake"
   "test/CMakeFiles/test_classreader.dir/DependInfo.cmake"
-  "test/CMakeFiles/test_parser.dir/DependInfo.cmake"
+  "test/CMakeFiles/test_parser_split.dir/DependInfo.cmake"
+  "test/CMakeFiles/test_parser_sum.dir/DependInfo.cmake"
   )

@@ -9,6 +9,7 @@
 
 namespace mini {
 
+// Code属性表
 class code_attri : public attribute_info {
   public:
     u2 max_stack_;
@@ -43,6 +44,7 @@ class code_attri : public attribute_info {
         attributes_count_ = reader.readU2();
         attributes_ = readAttributes(reader, attributes_count_, cf);
     }
+
     void print(std::ostream &os, const classfile &cf) const override {
         os << "  Attribute: Code\n";
         os << "    max_stack = " << max_stack_

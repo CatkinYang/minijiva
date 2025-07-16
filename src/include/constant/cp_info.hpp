@@ -28,7 +28,8 @@ enum ConstantTag : u1 {
     CONSTANT_Package = 20,
 };
 
-// 常量
+// 常量基类
+// read： 根据不同tag创建不同的constant
 class cp_info {
   public:
     virtual ~cp_info() = default;

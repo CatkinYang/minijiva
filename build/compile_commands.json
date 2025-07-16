@@ -43,6 +43,12 @@
 },
 {
   "directory": "/Users/catkin/workspace/hygon/minijiva/build/src",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/minijava.dir/attribute/attribute_info.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_info.cpp",
+  "file": "/Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_info.cpp",
+  "output": "src/CMakeFiles/minijava.dir/attribute/attribute_info.cpp.o"
+},
+{
+  "directory": "/Users/catkin/workspace/hygon/minijiva/build/src",
   "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/minijava.dir/attribute/attribute_utils.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_utils.cpp",
   "file": "/Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_utils.cpp",
   "output": "src/CMakeFiles/minijava.dir/attribute/attribute_utils.cpp.o"
@@ -97,6 +103,12 @@
 },
 {
   "directory": "/Users/catkin/workspace/hygon/minijiva/build/src/attribute",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/attribute.dir/attribute_info.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_info.cpp",
+  "file": "/Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_info.cpp",
+  "output": "src/attribute/CMakeFiles/attribute.dir/attribute_info.cpp.o"
+},
+{
+  "directory": "/Users/catkin/workspace/hygon/minijiva/build/src/attribute",
   "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIC -o CMakeFiles/attribute.dir/attribute_utils.cpp.o -c /Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_utils.cpp",
   "file": "/Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_utils.cpp",
   "output": "src/attribute/CMakeFiles/attribute.dir/attribute_utils.cpp.o"
@@ -109,8 +121,14 @@
 },
 {
   "directory": "/Users/catkin/workspace/hygon/minijiva/build/test",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -isystem /Users/catkin/workspace/hygon/minijiva/third_party/googletest/googletest/include -isystem /Users/catkin/workspace/hygon/minijiva/third_party/googletest/googletest -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIE -o CMakeFiles/test_parser.dir/test_parser.cpp.o -c /Users/catkin/workspace/hygon/minijiva/test/test_parser.cpp",
-  "file": "/Users/catkin/workspace/hygon/minijiva/test/test_parser.cpp",
-  "output": "test/CMakeFiles/test_parser.dir/test_parser.cpp.o"
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -isystem /Users/catkin/workspace/hygon/minijiva/third_party/googletest/googletest/include -isystem /Users/catkin/workspace/hygon/minijiva/third_party/googletest/googletest -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIE -o CMakeFiles/test_parser_split.dir/test_parser_split.cpp.o -c /Users/catkin/workspace/hygon/minijiva/test/test_parser_split.cpp",
+  "file": "/Users/catkin/workspace/hygon/minijiva/test/test_parser_split.cpp",
+  "output": "test/CMakeFiles/test_parser_split.dir/test_parser_split.cpp.o"
+},
+{
+  "directory": "/Users/catkin/workspace/hygon/minijiva/build/test",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/catkin/workspace/hygon/minijiva/src -I/Users/catkin/workspace/hygon/minijiva/src/include -I/Users/catkin/workspace/hygon/minijiva/test/include -I/Users/catkin/workspace/hygon/minijiva/third_party -isystem /Users/catkin/workspace/hygon/minijiva/third_party/googletest/googletest/include -isystem /Users/catkin/workspace/hygon/minijiva/third_party/googletest/googletest -g -Wall -Wextra -Werror -Wno-unused-parameter -Wno-attributes -O0 -ggdb -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -fPIE -o CMakeFiles/test_parser_sum.dir/test_parser_sum.cpp.o -c /Users/catkin/workspace/hygon/minijiva/test/test_parser_sum.cpp",
+  "file": "/Users/catkin/workspace/hygon/minijiva/test/test_parser_sum.cpp",
+  "output": "test/CMakeFiles/test_parser_sum.dir/test_parser_sum.cpp.o"
 }
 ]

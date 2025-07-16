@@ -3,7 +3,7 @@
 #include <filesystem>
 #include <fstream>
 namespace mini {
-// 打开文件，然后开始读取二进制文件
+// 类文件读取工具
 class classReader {
   public:
     explicit classReader(std::ifstream &stream) : ifs(stream) {}

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/minijava.dir/accessflag/fieldAccFlg.cpp.o.d"
   "CMakeFiles/minijava.dir/accessflag/methodAccFlg.cpp.o"
   "CMakeFiles/minijava.dir/accessflag/methodAccFlg.cpp.o.d"
+  "CMakeFiles/minijava.dir/attribute/attribute_info.cpp.o"
+  "CMakeFiles/minijava.dir/attribute/attribute_info.cpp.o.d"
   "CMakeFiles/minijava.dir/attribute/attribute_utils.cpp.o"
   "CMakeFiles/minijava.dir/attribute/attribute_utils.cpp.o.d"
   "CMakeFiles/minijava.dir/classfile.cpp.o"

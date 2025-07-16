@@ -2,7 +2,6 @@
 
 namespace mini {
 
-// --------- 根据tag创建对应的const info---------
 std::unique_ptr<cp_info> cp_info::read(u1 tag, classReader &r) {
     switch (tag) {
     case CONSTANT_Utf8: {
@@ -55,7 +54,6 @@ std::unique_ptr<cp_info> cp_info::read(u1 tag, classReader &r) {
     }
 }
 
-// --------- 构造函数 ---------
 CONSTANT_Utf8_info::CONSTANT_Utf8_info(u2 length, std::string value)
     : length(length), value(std::move(value)) {}
 
@@ -114,7 +112,6 @@ CONSTANT_Module_info::CONSTANT_Module_info(u2 name_index)
 CONSTANT_Package_info::CONSTANT_Package_info(u2 name_index)
     : name_index(name_index) {}
 
-// --------- print 打印---------
 void CONSTANT_Utf8_info::print() const {
     std::cout << "Utf8: " << value << "\n";
 }

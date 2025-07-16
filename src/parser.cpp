@@ -23,7 +23,7 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
     if (cf->magic_ != 0xCAFEBABE) {
         std::cerr << "Invalid class file format" << std::endl;
         return nullptr;
-    } else { // 文件是class文件
+    } else {
         std::cout << "valid class file format" << std::endl;
     }
 
@@ -33,36 +33,36 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
     std::cout << "Version: " << cf->major_version_ << "." << cf->minor_version_
               << std::endl;
 
-    // 常量池大小
+    // 填充常量池大小
     cf->constant_pool_count_ = reader.readU2();
     std::cout << "Constant pool count: " << cf->constant_pool_count_
               << std::endl;
     // 初始化常量池大小
     cf->constant_pool_.resize(cf->constant_pool_count_ - 1); // 从索引1开始
-    // 读取常量池数据
+    // 填充常量池数据,读取常量的tag,调用 cp_info
+    // 子类的工厂方法根据不同的tag创建对应的常数据
     for (auto i = 1; i < cf->constant_pool_count_; ++i) {
         auto tag = reader.readU1();
-        // 调用 cp_info 子类的工厂方法创建对应的常量数据
         auto entry = cp_info::read(tag, reader);
         cf->constant_pool_[i - 1] = std::move(entry);
-        if (tag == CONSTANT_Long ||
-            tag == CONSTANT_Double) { // Long / Double 占两个槽位
+        if (tag == CONSTANT_Long || tag == CONSTANT_Double) {
             ++i;
             if (i < cf->constant_pool_count_)
-                cf->constant_pool_[i - 1] = nullptr; // 占位，不能使用
+                cf->constant_pool_[i - 1] = nullptr;
         }
     }
     std::cout << "Constant pool loaded successfully.\n";
 
-    // 访问标志
+    // 填充访问标志
     cf->access_flags_ = reader.readU2();
     std::cout << "Access Flags: 0x" << std::hex << cf->access_flags_ << " ("
               << classAccFlg::toString(cf->access_flags_) << ")" << std::dec
               << "\n";
 
-    // 类、父类索引
+    // 填充类、父类索引,打印
     cf->this_class_ = reader.readU2();
     cf->super_class_ = reader.readU2();
+
     try {
         std::string thisName = cf->getClassName(cf->this_class_);
         std::string superName = (cf->super_class_ != 0)
@@ -74,7 +74,7 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
         std::cerr << "Error resolving class names: " << ex.what() << "\n";
     }
 
-    // 接口索引数量、集合
+    // 填充接口索引数量、集合
     cf->interfaces_count_ = reader.readU2();
     cf->interfaces_.resize(cf->interfaces_count_);
     for (u2 i = 0; i < cf->interfaces_count_; ++i) {
@@ -91,7 +91,7 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
         }
     }
 
-    // 字段表数量、字段表
+    // 填充字段表数量、字段表
     cf->fields_count_ = reader.readU2();
     cf->fields_.resize(cf->fields_count_);
     std::cout << "Fields count: " << cf->fields_count_ << "\n";
@@ -103,6 +103,7 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
         field->attributes_count_ = reader.readU2();
         field->attributes_ =
             readAttributes(reader, field->attributes_count_, *cf.get());
+
         try {
             std::string fieldName = cf->getUtf8(field->name_index_);
             std::string descriptor = cf->getUtf8(field->descriptor_index);
@@ -115,7 +116,7 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
         cf->fields_[i] = std::move(field);
     }
 
-    // 方法表
+    // 填充方法表
     cf->methods_count_ = reader.readU2();
     cf->methods_.resize(cf->methods_count_);
     std::cout << "Methods count: " << cf->methods_count_ << std::endl;
@@ -133,6 +134,7 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
             std::string descriptor = cf->getUtf8(method->descriptor_index_);
             std::cout << "  Method #" << i << ": " << methodName << " "
                       << descriptor << "\n";
+            method->print_attri(*cf);
         } catch (const std::exception &e) {
             std::cerr << "  Method #" << i << " parse failed: " << e.what()
                       << "\n";
@@ -141,7 +143,7 @@ std::unique_ptr<classfile> parser::fileToObject(std::string filename) {
         cf->methods_[i] = std::move(method);
     }
 
-    // 属性表
+    // 填充属性表
     cf->attributes_count_ = reader.readU2();
     cf->attributes_ = readAttributes(reader, cf->attributes_count_, *cf.get());
     for (u2 i = 0; i < cf->attributes_count_; ++i) {

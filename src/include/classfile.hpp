@@ -30,17 +30,20 @@ class classfile {
     static classfile *create() = delete;
 
   public:
-    // 根据索引从常量池中获取类名
+    // 从常量池取出index的cp_info，转成Class_info获取类名index
+    // 根据类名index取出类名
     std::string getClassName(u2 index) const;
     // 根据索引从常量池中获取Utf8字符串
     std::string getUtf8(u2 index) const;
+    // 从该类中取出主方法
+    auto getMainMethod() const -> std::unique_ptr<attribute_info>;
 
   private:
     u4 magic_;
     u2 minor_version_;
     u2 major_version_;
     u2 constant_pool_count_;
-    std::vector<std::unique_ptr<mini::cp_info>> constant_pool_;
+    std::vector<std::unique_ptr<cp_info>> constant_pool_;
 
     u2 access_flags_;
     u2 this_class_;
@@ -50,13 +53,13 @@ class classfile {
     std::vector<u2> interfaces_;
 
     u2 fields_count_;
-    std::vector<std::unique_ptr<mini::field_info>> fields_;
+    std::vector<std::unique_ptr<field_info>> fields_;
 
     u2 methods_count_;
-    std::vector<std::unique_ptr<mini::method_info>> methods_;
+    std::vector<std::unique_ptr<method_info>> methods_;
 
     u2 attributes_count_;
-    std::vector<std::unique_ptr<mini::attribute_info>> attributes_;
+    std::vector<std::unique_ptr<attribute_info>> attributes_;
 };
 
 } // namespace mini

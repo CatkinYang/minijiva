@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_info.cpp" "src/attribute/CMakeFiles/attribute.dir/attribute_info.cpp.o" "gcc" "src/attribute/CMakeFiles/attribute.dir/attribute_info.cpp.o.d"
   "/Users/catkin/workspace/hygon/minijiva/src/attribute/attribute_utils.cpp" "src/attribute/CMakeFiles/attribute.dir/attribute_utils.cpp.o" "gcc" "src/attribute/CMakeFiles/attribute.dir/attribute_utils.cpp.o.d"
   )
 
